@@ -1,14 +1,14 @@
 import React from 'react'
-import LeftContent from './LeftContent'
-import RightContent from './RightContent'
+import Navbar from './Navbar'
+import Page1Content from './Page1Content'
 
-const Page1Content = () => {
+const Section1 = (props) => {
   return (
-    <div className='py-10 flex items-center gap-10 justify-between h-[90vh] px-18'>
-      <LeftContent />
-      <RightContent />
+    <div className='h-screen w-full '>
+        <Navbar />
+        <Page1Content users={props.users} />
     </div>
   )
 }
 
-export default Page1Content
+export default Section1
